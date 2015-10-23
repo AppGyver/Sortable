@@ -1189,7 +1189,7 @@
 		if (el.matches) {
 			return el.matches(selector);
 		}
-		else if (el.matchesSelector(selector)) {
+		else if (el.matchesSelector && el.matchesSelector(selector)) {
 			return el.matchesSelector(selector);
 		}
 		else {
